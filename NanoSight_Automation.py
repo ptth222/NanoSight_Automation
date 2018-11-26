@@ -1750,6 +1750,7 @@ class Automation_GUI(wx.Frame):
         #########################
         self.individual_directories_checkbox = wx.CheckBox(panel, label = "Create Individual Directories For Each Sample")
         self.individual_directories_checkbox.SetValue(True)
+        self.samples_have_individual_directories = True
         
         self.individual_directories_checkbox.Bind(wx.EVT_CHECKBOX, self.OnCheck)
         
